@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DEFAULT OVERRIDES */
+@layer base {
+    video {
+        left: 50%;
+        top: 50%;
+        max-width: initial;
+        position: absolute;
+        transform: translate(-46%, -50%);
+    }
+}
