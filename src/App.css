@@ -21,8 +21,8 @@ li {
   position: absolute;
 }
 
-.shadow {
-text-shadow: '0 0 0.75rem black';
+.cstm-text-shadow-red {
+  text-shadow: crimson 0px 0 10px;
 }
 
 .diagonal {
@@ -36,7 +36,7 @@ transition: all 300ms ease;
 }
 
 .logo-filter {
-  filter: drop-shadow(0 0 0.75rem black);
+  filter: drop-shadow(0 0 1rem black);
 }
 
 .low-opacity-bg {
