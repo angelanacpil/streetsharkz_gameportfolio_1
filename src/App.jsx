@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import './App.css'
 import useScrollVideo from './hooks/useScrollVideo';
 import Home from './components/Home'
+import SubHeader from './components/SubHeader';
 import Menu from './components/Menu';
 import VideoPage from './components/VideoPage';
 import Team from './components/Team';
@@ -22,8 +23,9 @@ function App() {
     <main onScrollCapture={handleScroll}>
       <Parallax ref={screenRef} pages={8}>
         {/* Page 1 - Home */}
-        <ParallaxLayer speed={1} factor={2} className='bg-cover bg-fixed bg-center bg-no-repeat bg-bg_logo'>
+        <ParallaxLayer speed={1} factor={2} className='flex flex-col lg:gap-10 bg-cover bg-fixed bg-center bg-no-repeat bg-bg_logo'>
           <Home></Home>
+          <SubHeader></SubHeader>
         </ParallaxLayer>
 
         {/* Page 2 - Sticky Menu */}

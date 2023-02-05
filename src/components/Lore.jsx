@@ -57,7 +57,7 @@ const Lore = () => {
 
     return (
         <>
-            <h2 id="lore" className='text-[5em] lg:text-[8em] font-bold'>Lore</h2>
+            <h2 id="lore" className='text-[5em] 2xl:text-[8em] lg:mt-40 font-bold'>Lore</h2>
 
             {/* Container */}
             <section className='my-8 mx-auto flex flex-col items-center gap-4 shadow py-2 lg:py-28' style={{ backgroundColor: `rgba(0, 0, 0, 0.5)` }}>
@@ -83,11 +83,11 @@ const Lore = () => {
                     >
                     {/* Image */}
                     <img className={`character-thumbnail animate-child object-contain w-full h-96 diagonal border-double border-red-400 border-2
-                        lg:h-[28rem] lg:w-[28rem]`} src={lore.img} />
+                        2xl:h-[28rem] 2xl:w-[28rem]`} src={lore.img} />
 
                     <div className='p-4 flex flex-col'>
                         {/* Carousel Buttons */}
-                        <div className='flex justify-evenly items-center mb-4 lg:justify-start lg:gap-16'>
+                        <div className='flex justify-evenly items-center mb-4 lg:mt-20 lg:justify-start lg:gap-20'>
                         <button onClick={prevCarousel}>
                             <img src={l_arrow} className='arrow'/>
                         </button>
@@ -99,9 +99,9 @@ const Lore = () => {
                         
                         {/* Details */}
                         <div className={`${carouselMoved ? 'animate-parent' : ''}`}>
-                        <h5 className={`text-center lg:text-left my-4 text-3xl font-bold :text-white
+                        <h5 className={`text-center lg:text-left my-4 text-2xl 2xl:text-3xl font-bold :text-white
                             animate-child`}>{lore.name}</h5>
-                        <p className={`normal-case text-center lg:text-left mb-3 text-gray-400 text-sm lg:text-lg
+                        <p className={`normal-case text-center lg:text-left mb-3 text-gray-400 text-sm lg:text-md 2xl:text-lg
                             animate-child`}>{lore.description}</p>
                         </div>
                     </div>
