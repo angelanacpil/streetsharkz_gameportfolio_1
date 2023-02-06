@@ -23,7 +23,10 @@ function App() {
     <main onScrollCapture={handleScroll}>
       <Parallax ref={screenRef} pages={8}>
         {/* Page 1 - Home */}
-        <ParallaxLayer speed={1} factor={2} className='flex flex-col lg:gap-10 bg-cover bg-fixed bg-center bg-no-repeat bg-bg_logo'>
+        {/* [length:1000px_800px] */}
+        {/* bg-cover bg-center */}
+        {/* bg-[length:1000px_1480px] */}
+        <ParallaxLayer speed={1} factor={2} className='flex flex-col lg:gap-10 bg-fixed bg-[length:1000px_100%] md:bg-cover md:bg-center bg-[48%] bg-no-repeat bg-bg_logo'>
           <Home></Home>
           <SubHeader></SubHeader>
         </ParallaxLayer>

@@ -57,7 +57,7 @@ const Lore = () => {
 
     return (
         <>
-            <h2 id="lore" className='text-[5em] 2xl:text-[8em] lg:mt-40 font-bold'>Lore</h2>
+            <h2 id="lore" className='text-[3em] md:text-[5em] 2xl:text-[8em] lg:mt-40 font-bold'>Lore</h2>
 
             {/* Container */}
             <section className='my-8 mx-auto flex flex-col items-center gap-4 shadow py-2 lg:py-28' style={{ backgroundColor: `rgba(0, 0, 0, 0.5)` }}>
@@ -68,7 +68,7 @@ const Lore = () => {
                         {/* Character Selection Buttons */}
                         <button onClick={evt => selectCharacter(evt, (lore.id - 1))}>
                         <img src={lore.img} 
-                        className={`mx-4 rounded shadow h-[5rem] object-center character-button 
+                        className={`mx-2 md:mx-4 rounded shadow max-h-[60px] md:max-h-[80px] 2xl:max-h-[100px] object-center character-button 
                             ${carouselMoved ? 'character-button_parent' : ''}
                             ${currentItem === (lore.id - 1) ? 'opacity-50' : 'opacity-100'}`} />
                         </button>
@@ -82,8 +82,8 @@ const Lore = () => {
                     ${currentItem === i ? 'flex flex-col lg:flex-row items-center' : 'hidden'}`}
                     >
                     {/* Image */}
-                    <img className={`character-thumbnail animate-child object-contain w-full h-96 diagonal border-double border-red-400 border-2
-                        2xl:h-[28rem] 2xl:w-[28rem]`} src={lore.img} />
+                    <img className={`character-thumbnail animate-child object-contain w-full max-w-[400px] max-h-[400px] diagonal border-double border-red-400 border-2
+                        2xl:h-[448px] 2xl:w-[448px]`} src={lore.img} />
 
                     <div className='p-4 flex flex-col'>
                         {/* Carousel Buttons */}

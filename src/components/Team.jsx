@@ -3,12 +3,13 @@ import shuriken from '/shuriken.png'
 const Team = () => {
   return (
     <>
-    <h2 id='team' className='text-[5em] 2xl:text-[8em] font-bold'>Team</h2>
+    <h2 id='team' className='text-[3em] md:text-[5em] 2xl:text-[8em] font-bold'>Team</h2>
 
-      <section className='my-0 mx-auto 2xl:ml-[10rem] flex flex-col max-w-sm items-center p-4 bg-black rounded-lg shadow lg:flex-row lg:max-w-[60rem]'>
-        <img className="object-cover rounded-lg h-96 lg:mr-4 p-2
-        lg:h-[28rem] lg:w-[28rem]" src={shuriken} />
+      <section className='my-4 md:my-0 mx-auto flex flex-col max-w-[300px] md:max-w-sm items-center p-4 bg-black rounded-lg shadow lg:flex-row lg:max-w-[960px]'>
+        {/* Team Image */}
+        <img className="object-cover rounded-lg lg:mr-4 p-2 min-h-[200px] min-w-[200px] md:max-h-[300px] md:max-w-[300px] lg:max-h-[448px] lg:max-w-[448px]" src={shuriken} />
         
+        {/* Description */}
         <div className="flex flex-col justify-between p-4 w-full">
           <h3 className="text-left mb-2 text-2xl font-bold :text-white">Founder</h3>
 
@@ -17,10 +18,11 @@ const Team = () => {
         </div>
       </section>
 
-      <section className='mx-0 my-auto 2xl:ml-[25rem] flex flex-col max-w-sm items-center p-4 bg-black rounded-lg shadow lg:flex-row-reverse lg:max-w-[60rem]'>
-        <img className="object-cover w-full rounded-lg h-96 lg:ml-4 p-2
-        lg:h-[28rem] lg:w-[28rem]" src={shuriken} />
+      <section className='my-4 md:my-0 mx-auto flex flex-col max-w-[300px] md:max-w-sm items-center p-4 bg-black rounded-lg shadow lg:flex-row lg:max-w-[960px]'>
+        {/* Team Image */}
+        <img className="object-cover rounded-lg lg:mr-4 p-2 min-h-[200px] min-w-[200px] md:max-h-[300px] md:max-w-[300px] lg:max-h-[448px] lg:max-w-[448px]" src={shuriken} />
         
+        {/* Description */}
         <div className="flex flex-col justify-between p-4 w-full">
           <h3 className="text-left mb-2 text-2xl font-bold :text-white">Artist</h3>
 
